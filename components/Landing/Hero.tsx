@@ -5,6 +5,7 @@ import { MorphingText } from '../ui/morphing-text'
 import { HeroConfig } from '@/config/Hero'
 import { Skill } from '../common/Skill'
 import { Socials } from '../common/SocialLinks'
+import NowPlaying from '../common/SpotifyPlayer'
 
 export const Hero = () => {
   return (
@@ -33,6 +34,9 @@ export const Hero = () => {
             </div>
             <div className='flex items-center gap-2 mt-6'>
              <Socials />
+            </div>
+            <div className='mt-6'>
+                <NowPlaying />
             </div>
         </div>
     </Box>
