@@ -160,7 +160,7 @@ export default function NowPlaying() {
   const progressPercent = duration ? (currentTime / duration) * 100 : 0;
 
   return (
-    <div className="mt-6">
+    <div className="mt-2">
       <div className="flex flex-col gap-3 text-sm p-3 rounded-lg bg-muted/30 border border-border/50 shadow-inner">
         <div className="flex items-center gap-3">
           <img

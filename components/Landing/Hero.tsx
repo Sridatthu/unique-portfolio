@@ -5,7 +5,7 @@ import { Skill } from "../common/Skill";
 import { Socials } from "../common/SocialLinks";
 import NowPlaying from "../common/SpotifyPlayer";
 import { WordRotate } from "../ui/word-rotate";
-import IndiaFlag from "../Svgs/IndianFlag";
+import IndiaFlag from "../svgs/IndianFlag";
 
 export const Hero = () => {
   return (
@@ -32,29 +32,15 @@ export const Hero = () => {
         </div>
 
         <div className="flex mt-4">
-            <div className="font-mono text-base text-justify">
+            <div className="font-mono text-base text-justify dark:text-[#A1A1A1] px-4 ">
                 I built intearactive and responsive web applications using modern technologies.with a strong focus on clean code and best practices.Enthusiastic about learning new technologies and continuously improving my skills.
             </div>
 
         </div>
-        {/* <div className=" flex flex-col gap-2 mt-6 w-full ">
-          <div className="font-mono font-bold">Skills :</div>
-          <div className="flex flex-wrap gap-1 w-full">
-            {HeroConfig.skills.map((skill, index) => {
-              return (
-                <Skill
-                  key={index}
-                  SkillLogo={skill.logo}
-                  SkillTitle={skill.title}
-                />
-              );
-            })}
-          </div>
-        </div> */}
-        <div className="flex items-center gap-2 mt-4">
+        <div className="flex items-center gap-2 mt-2 px-4">
           <Socials />
         </div>
-        <div className="mt-2">
+        <div className="px-3">
           <NowPlaying />
         </div>
       </div>

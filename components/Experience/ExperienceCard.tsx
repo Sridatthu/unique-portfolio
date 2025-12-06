@@ -19,8 +19,8 @@ export const ExperienceCard = () => {
                 <div className='text-[#9898A2] text-sm font-mono font-medium'>India (Remote)</div>
             </div>
         </div>
-        <div className='flex flex-col gap-2 '>
-            <div className='font-bold'>Technologies & Tools</div>
+        <div className='flex flex-col gap-4 px-2 '>
+            <div className='font-semibold text-base font-mono'>Technologies & Tools</div>
             <div className="flex flex-wrap gap-2">
                 {ExperienceConfig.skills.map((skill, index) => {
               return (
@@ -33,13 +33,13 @@ export const ExperienceCard = () => {
             })}
             </div>
         </div>
-        <div className='flex flex-col gap-2 px-2'>
-            <p className='text-sm font-mono text-justify text-[#A1A1A1] '>
+        <div className='flex flex-col gap-2 px-2 '>
+            <p className='text-sm font-mono text-justify dark:text-[#A1A1A1] '>
             - Developed and maintained responsive web applications using  <span className='font-bold'>Next.js</span>, <span className='font-bold'>React</span>, <span className='font-bold'>TypeScript</span> and <span className='font-bold'>Tailwind CSS</span>, ensuring optimal performance and user experience across devices.
             </p>
-            <p className='text-sm font-mono text-justify text-[#A1A1A1] '>- Integrated and optimized backend API connections, implementing efficient data fetching strategies and error handling mechanisms.</p>
-            <p className='text-sm font-mono text-justify text-[#A1A1A1]'>- Enhanced user experience and interface design through implementation of consistent design systems, accessibility standards, and performance optimizations.</p>
-            <p className='text-sm font-mono text-justify text-[#A1A1A1]'>- Analyze technical capabilities and provide optimal solutions.</p>
+            <p className='text-sm font-mono text-justify dark:text-[#A1A1A1] '>- Integrated and optimized backend API connections, implementing efficient data fetching strategies and error handling mechanisms.</p>
+            <p className='text-sm font-mono text-justify dark:text-[#A1A1A1]'>- Enhanced user experience and interface design through implementation of consistent design systems, accessibility standards, and performance optimizations.</p>
+            <p className='text-sm font-mono text-justify dark:text-[#A1A1A1]'>- Analyze technical capabilities and provide optimal solutions.</p>
         </div>
     </div>
   )
