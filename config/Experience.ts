@@ -26,12 +26,12 @@ export const ExperienceConfig={
             title:"NodeJs"
         },
         {
-            logo:"/svg/tailwindcss-icon.svg",
-            title:"Tailwind Css"
-        },
-        {
             logo:"/svg/nextjs-icon.svg",
             title:"NextJs"
+        },
+        {
+            logo:"/svg/tailwindcss-icon.svg",
+            title:"Tailwind Css"
         },
         {
             logo:"/svg/typescript-icon.svg",

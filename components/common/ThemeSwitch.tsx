@@ -161,7 +161,12 @@ export const ThemeToggleButton = ({
         'size-10 cursor-pointer  p-0 transition-all duration-300 active:scale-95',
         className,
       )}
-      onClick={toggleTheme}
+     onClick={() => {
+        const audio = new Audio("/sounds/switch.mp3");
+        audio.volume = 0.8;
+        audio.play().catch((e) => console.error("Audio play failed", e));
+        toggleTheme();
+      }}
       aria-label="Toggle theme"
     >
       <span className="sr-only">Toggle theme</span>

@@ -32,8 +32,8 @@ export const Hero = () => {
         </div>
 
         <div className="flex mt-4">
-            <div className="font-mono text-base text-justify dark:text-[#A1A1A1] px-4 ">
-                I built intearactive and responsive web applications using modern technologies.with a strong focus on clean code and best practices.Enthusiastic about learning new technologies and continuously improving my skills.
+            <div className="font-mono text-base text-left md:text-justify dark:text-[#A1A1A1] px-4 ">
+                I built intearactive and responsive web applications using modern technologies.with a strong focus on clean code and best practices.
             </div>
 
         </div>
