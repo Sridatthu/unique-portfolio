@@ -171,7 +171,7 @@ export default function NowPlaying() {
             src={albumImage}
           />
           <div className="flex flex-col gap-1 flex-1 min-w-0">
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 font-mono">
               <div className="p-1 rounded bg-green-500/10 shadow-inner transition-opacity">
                 {/* Inline Spotify SVG */}
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" className="text-green-500 filter drop-shadow-sm" xmlns="http://www.w3.org/2000/svg">
@@ -180,7 +180,7 @@ export default function NowPlaying() {
               </div>
               <span className="text-xs text-muted-foreground font-medium">{statusLabel}</span>
             </div>
-            <div className="flex flex-col min-h-10 max-h-10">
+            <div className="flex flex-col min-h-10 max-h-10 font-mono">
               <a
                 href={spotifyUrl}
                 target="_blank"
@@ -220,7 +220,7 @@ export default function NowPlaying() {
           </button>
         </div>
         {audioUrl && (<>
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-3 font-mono">
             <div data-orientation="horizontal" role="none" className="bg-border shrink-0 h-px w-full"></div>
             <div className="flex items-center gap-3">
               <div className="flex-1 min-w-0">

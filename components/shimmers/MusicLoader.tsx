@@ -7,7 +7,7 @@ export const MusicLoader = () => {
                         <div className="w-12 h-12 rounded-md bg-muted animate-pulse"></div>
                         <div className="flex flex-col gap-1 flex-1">
                             <div className="flex items-center gap-2">
-                                <span className="text-xs text-muted-foreground font-medium">Loading...</span>
+                                <span className="text-xs text-muted-foreground font-medium font-mono">Loading...</span>
                             </div>
                             <div className="flex flex-col gap-1">
                                 <div className="h-4 bg-muted animate-pulse rounded w-3/4"></div>

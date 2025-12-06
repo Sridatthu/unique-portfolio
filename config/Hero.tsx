@@ -7,7 +7,7 @@ interface SkillProps {
 export const HeroConfig = {
     name: "Sri Datthu Goud",
     avatar: "/assets/logo.png",
-    jobTitle: ["Backends", "Frontends", "WebApps"],
+    jobTitle: ["FullStack Developer", "Software Engineer", "Tech Enthusiast"],
     skills: [
         {
             logo: "/svg/react.svg",

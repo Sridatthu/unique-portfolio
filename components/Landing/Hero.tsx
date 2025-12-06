@@ -1,44 +1,65 @@
-
-import Box from '../common/Box'
-import Image from 'next/image'
-import { MorphingText } from '../ui/morphing-text'
-import { HeroConfig } from '@/config/Hero'
-import { Skill } from '../common/Skill'
-import { Socials } from '../common/SocialLinks'
-import NowPlaying from '../common/SpotifyPlayer'
+import Box from "../common/Box";
+import Image from "next/image";
+import { MorphingText } from "../ui/morphing-text";
+import { HeroConfig } from "@/config/Hero";
+import { Skill } from "../common/Skill";
+import { Socials } from "../common/SocialLinks";
+import NowPlaying from "../common/SpotifyPlayer";
+import { WordRotate } from "../ui/word-rotate";
 
 export const Hero = () => {
   return (
-    <Box className='mx-auto max-w-5xl'>
-        <div className='flex flex-col gap-4'>
-            <div className='flex gap-4'>
-                <div>
-                    <Image src={HeroConfig.avatar} alt={HeroConfig.name} width={100} height={100} className="size-24 rounded-md border border-gray-200 transition-all duration-300 
-            ease-in-out hover:scale-90"/>
-                </div>
+    <Box className="mx-auto max-w-5xl">
+      <div className="flex flex-col gap-4">
+        <div className="flex gap-4 items-center">
+          <div>
+            <Image
+              src={HeroConfig.avatar}
+              alt={HeroConfig.name}
+              width={100}
+              height={100}
+              className="size-24 rounded-full border-3 border-gray-150 dark:border-gray-400 transition-all duration-300 
+            ease-in-out hover:scale-90"
+            />
+          </div>
+          <div className="flex flex-col items-baseline">
+            <h1 className="font-mono text-3xl font-medium">{HeroConfig.name}</h1>
+            <WordRotate words={HeroConfig.jobTitle} className="text-[#9898A2] font-mono" />
+          </div>
+        </div>
+
+        <div className="flex mt-4">
+            <div className="font-mono text-base text-justify">
+                I built intearactive and responsive web applications using modern technologies.with a strong focus on clean code and best practices.Enthusiastic about learning new technologies and continuously improving my skills.
             </div>
-            <div>
-                <h1 className='font-mono text-2xl font-bold'>Hi, I'm {HeroConfig.name}</h1>
-            </div>
-            <div className='flex gap-1 items-center mt-6'>
+
+        </div>
+        {/* <div className='flex gap-1 items-center mt-4'>
                 <span className="font-mono">I'Build</span>
                <div className='h-7 w-24 relative'> <MorphingText  texts={HeroConfig.jobTitle} /> </div>
-            </div>
-            <div className=' flex flex-col gap-2 mt-6'>
-                <div className='font-mono font-bold'>Skills :</div>
-                <div className='flex flex-wrap gap-2'>
-                    {HeroConfig.skills.map((skill,index)=>{
-                        return <Skill key={index} SkillLogo={skill.logo} SkillTitle={skill.title} />
-                    })}
-                </div>
-            </div>
-            <div className='flex items-center gap-2 mt-6'>
-             <Socials />
-            </div>
-            <div className='mt-6'>
-                <NowPlaying />
-            </div>
+               <div></div>
+            </div> */}
+        {/* <div className=" flex flex-col gap-2 mt-6 w-full ">
+          <div className="font-mono font-bold">Skills :</div>
+          <div className="flex flex-wrap gap-1 w-full">
+            {HeroConfig.skills.map((skill, index) => {
+              return (
+                <Skill
+                  key={index}
+                  SkillLogo={skill.logo}
+                  SkillTitle={skill.title}
+                />
+              );
+            })}
+          </div>
+        </div> */}
+        <div className="flex items-center gap-2 mt-6">
+          <Socials />
         </div>
+        <div className="mt-6">
+          <NowPlaying />
+        </div>
+      </div>
     </Box>
-  )
-}
+  );
+};
