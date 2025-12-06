@@ -5,7 +5,7 @@ import { Skill } from "../common/Skill";
 import { Socials } from "../common/SocialLinks";
 import NowPlaying from "../common/SpotifyPlayer";
 import { WordRotate } from "../ui/word-rotate";
-import IndiaFlag from "../svgs/IndianFlag";
+import IndiaFlag from "../Svgs/IndianFlag";
 
 export const Hero = () => {
   return (

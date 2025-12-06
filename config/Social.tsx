@@ -1,7 +1,7 @@
-import Github from "@/components/svgs/Github";
-import LinkedIn from "@/components/svgs/LinkedIn";
-import Mail from "@/components/svgs/Mail";
-import X from "@/components/svgs/X";
+import Github from "@/components/Svgs/Github";
+import LinkedIn from "@/components/Svgs/LinkedIn";
+import Mail from "@/components/Svgs/Mail";
+import X from "@/components/Svgs/X";
 
 
 
