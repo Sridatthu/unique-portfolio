@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
+import { Skill } from '../common/Skill';
+import { ExperienceConfig } from '@/config/Experience';
 
 export const ExperienceCard = () => {
   return (
@@ -17,10 +19,23 @@ export const ExperienceCard = () => {
                 <div className='text-[#9898A2] text-sm font-mono font-medium'>India (Remote)</div>
             </div>
         </div>
-        <div></div>
+        <div className='flex flex-col gap-2 '>
+            <div className='font-bold'>Technologies & Tools</div>
+            <div className="flex flex-wrap gap-2">
+                {ExperienceConfig.skills.map((skill, index) => {
+              return (
+                <Skill
+                  key={index}
+                  SkillLogo={skill.logo}
+                  SkillTitle={skill.title}
+                />
+              );
+            })}
+            </div>
+        </div>
         <div className='flex flex-col gap-2 px-2'>
             <p className='text-sm font-mono text-justify text-[#A1A1A1] '>
-            - Developed and maintained responsive web applications using React.js, Next.js, and Tailwind CSS, ensuring optimal performance and user experience across devices.
+            - Developed and maintained responsive web applications using  <span className='font-bold'>Next.js</span>, <span className='font-bold'>React</span>, <span className='font-bold'>TypeScript</span> and <span className='font-bold'>Tailwind CSS</span>, ensuring optimal performance and user experience across devices.
             </p>
             <p className='text-sm font-mono text-justify text-[#A1A1A1] '>- Integrated and optimized backend API connections, implementing efficient data fetching strategies and error handling mechanisms.</p>
             <p className='text-sm font-mono text-justify text-[#A1A1A1]'>- Enhanced user experience and interface design through implementation of consistent design systems, accessibility standards, and performance optimizations.</p>

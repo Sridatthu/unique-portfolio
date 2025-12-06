@@ -7,7 +7,7 @@ import { ThemeToggleButton } from "../common/ThemeSwitch";
 
 export const NavBar = () => {
   return (
-    <Box className="sticky top-0 z-20 rounded-md py-4 btn-inner-shadow">
+    <Box className="sticky top-0 z-20 rounded-md py-4 btn-inner-shadow bg-background">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-4">
           <Link href="/">

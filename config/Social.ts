@@ -9,7 +9,7 @@ interface SocialProps{
 export const SocialLinks:SocialProps[] = [
     {
         name:"Github",
-        url:"https://github.com/",
+        url:"https://github.com/Sridatthu",
         icon:"/links/github.svg"
     },
     {
@@ -24,7 +24,7 @@ export const SocialLinks:SocialProps[] = [
     },
     {
         name:"Gmail",
-        url:"https://mail.google.com/",
+        url:"https://sridatthu18@gmail.com/",
         icon:"/links/mail.svg"
     },
    

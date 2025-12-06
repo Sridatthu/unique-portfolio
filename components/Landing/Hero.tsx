@@ -1,11 +1,11 @@
 import Box from "../common/Box";
 import Image from "next/image";
-import { MorphingText } from "../ui/morphing-text";
 import { HeroConfig } from "@/config/Hero";
 import { Skill } from "../common/Skill";
 import { Socials } from "../common/SocialLinks";
 import NowPlaying from "../common/SpotifyPlayer";
 import { WordRotate } from "../ui/word-rotate";
+import IndiaFlag from "../Svgs/IndianFlag";
 
 export const Hero = () => {
   return (
@@ -23,7 +23,10 @@ export const Hero = () => {
             />
           </div>
           <div className="flex flex-col items-baseline">
-            <h1 className="font-mono text-3xl font-medium">{HeroConfig.name}</h1>
+            <div className="flex gap-2 items-center">
+              <h1 className="font-mono text-3xl font-medium">{HeroConfig.name}</h1>
+              <a className="hover:scale-110 transition-all duration-300 ease-in-out cursor-pointer " href="https://india.gov.in/" target="_blank" rel="noopener noreferrer"><IndiaFlag width={25} height={15} /></a>
+            </div>
             <WordRotate words={HeroConfig.jobTitle} className="text-[#9898A2] font-mono" />
           </div>
         </div>
@@ -34,11 +37,6 @@ export const Hero = () => {
             </div>
 
         </div>
-        {/* <div className='flex gap-1 items-center mt-4'>
-                <span className="font-mono">I'Build</span>
-               <div className='h-7 w-24 relative'> <MorphingText  texts={HeroConfig.jobTitle} /> </div>
-               <div></div>
-            </div> */}
         {/* <div className=" flex flex-col gap-2 mt-6 w-full ">
           <div className="font-mono font-bold">Skills :</div>
           <div className="flex flex-wrap gap-1 w-full">
@@ -53,10 +51,10 @@ export const Hero = () => {
             })}
           </div>
         </div> */}
-        <div className="flex items-center gap-2 mt-6">
+        <div className="flex items-center gap-2 mt-4">
           <Socials />
         </div>
-        <div className="mt-6">
+        <div className="mt-2">
           <NowPlaying />
         </div>
       </div>

@@ -1,6 +1,7 @@
 import Box from "@/components/common/Box";
 import { Github } from "@/components/common/Github";
 import { Experience } from "@/components/Experience/Experience";
+import { About } from "@/components/Landing/About";
 import { Hero } from "@/components/Landing/Hero";
 
 
@@ -11,6 +12,7 @@ export default function Home() {
     <Hero/>
     <Experience/>
     <Github/>
+    <About/>
   </Box>
   );
 }
