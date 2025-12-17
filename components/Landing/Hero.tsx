@@ -32,12 +32,12 @@ export const Hero = () => {
         </div>
 
         <div className="flex mt-4">
-            <div className="font-mono text-sm  md:text-base text-left md:text-justify dark:text-[#A1A1A1] px-4 ">
+            <div className="font-mono text-sm  md:text-base text-left md:text-justify dark:text-[#A1A1A1] ">
                 I built intearactive and responsive web applications using modern technologies.with a strong focus on clean code and best practices.
             </div>
 
         </div>
-        <div className="flex items-center gap-2 mt-2 px-4">
+        <div className="flex items-center gap-2 mt-2">
           <Socials />
         </div>
         <div className="">

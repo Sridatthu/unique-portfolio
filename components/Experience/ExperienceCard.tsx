@@ -5,7 +5,7 @@ import { ExperienceConfig } from '@/config/Experience';
 
 export const ExperienceCard = () => {
   return (
-    <div className='flex flex-col  gap-4 mt-4 p-4 '>
+    <div className='flex flex-col  gap-4 mt-4'>
         <div className=' flex flex-col md:flex-row md:justify-between md:items-center'>
             <div className='flex gap-4  '>
                  <Image src='/assets/ten.webp' alt='TEN Logo' width={40} height={40} className='rounded-md h-12 w-12 object-cover  hover:scale-95 transition-all duration-300 ease-in-out cursor-pointer'/>

@@ -3,6 +3,7 @@ import { useTheme } from 'next-themes'
 import React, { useEffect, useState,cloneElement } from 'react'
 import { GitHubCalendar } from "react-github-calendar";
 import { Tooltip } from "react-tooltip";
+import Box from './Box';
 export const Github = () => {
     const {theme} = useTheme();
     const [mounted, setMounted] = useState(false);
@@ -22,7 +23,8 @@ export const Github = () => {
     }
 
   return (
-    <div className='mt-6 flex flex-col px-3 gap-4'>
+    <Box className='mt-20'>
+    <div className='flex flex-col gap-4'>
         <h2 className='text-3xl font-semibold'>Github Activity</h2>
         <div className='flex w-full justify-center font-mono border p-4 rounded-lg btn-inner-shadow'>
              <GitHubCalendar
@@ -56,5 +58,6 @@ export const Github = () => {
               />
         </div>
     </div>
+    </Box>
   )
 }

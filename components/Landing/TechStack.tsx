@@ -1,6 +1,7 @@
 import React from 'react'
 import { Marquee } from '../ui/marquee'
 import Image from 'next/image'
+import Box from '../common/Box'
 
 const Skills= [
   {
@@ -80,7 +81,7 @@ const Tools=[
 const SkillCard=(props:{name:string,image:string})=>{
   return(
    <div className="flex relative items-center gap-2 rounded-md border dark:border-white/30 border-black/20 px-2 py-1 btn-inner-shadow transition-all duration-300 
-            ease-in-out   bg-[#F2F2F2] dark:bg-[#2F2F2F] ">
+            ease-in-out   bg-[#F2F2F2] dark:bg-[#2F2F2F] border-dashed ">
      <div className="flex items-center">
             <Image src={props.image} alt={props.name} width={20} height={20} className="size-4 md:size-5 " />
           </div>
@@ -93,7 +94,8 @@ const SkillCard=(props:{name:string,image:string})=>{
 
 export const TechStack = () => {
   return (
-    <div className='flex flex-col px-4 mt-3'>
+   <Box className="mt-20">
+     <div className='flex flex-col '>
        <h2 className='text-3xl font-semibold'>TechStack</h2>
         <div className='mt-4 relative w-full flex flex-col items-center justify-center overflow-hidden '>
           <Marquee pauseOnHover className="[--duration:20s]">
@@ -111,5 +113,6 @@ export const TechStack = () => {
       <div className="from-background pointer-events-none absolute inset-y-0 -right-4 w-1/4 bg-gradient-to-l"></div> 
         </div>
     </div>
+   </Box>
   )
 }
