@@ -31,7 +31,7 @@ export const projects: Project[] = [
     title: 'Magical Draw',
     description:
       'A comprehensive realtime collaborative drawing tool',
-    image: '/assets/logo.png',
+    image: '/projects/magicaldraw.png',
     video: 'https://ik.imagekit.io/hwj18u8hq/datthuui.mp4?tr=orig',
     link: 'https://magicaldraw.vercel.app/',
     technologies: [
@@ -56,7 +56,7 @@ export const projects: Project[] = [
     title: 'Datthu UI',
     description:
       'A UI library for building modern web applications',
-    image: '/assets/logo.png',
+    image: '/projects/datthuui.png',
     video: 'https://ik.imagekit.io/hwj18u8hq/datthuui.mp4?tr=orig',
     link: 'https://ui.datthu.site/',
     technologies: [
