@@ -32,7 +32,7 @@ export const projects: Project[] = [
     description:
       'A comprehensive realtime collaborative drawing tool',
     image: '/projects/magicaldraw.png',
-    video: 'https://ik.imagekit.io/hwj18u8hq/datthuui.mp4?tr=orig',
+    video: 'https://ik.imagekit.io/hwj18u8hq/magicaldraw.mp4?tr=orig',
     link: 'https://magicaldraw.vercel.app/',
     technologies: [
       { name: 'Next.js', icon: <NextJs key="nextjs" /> },

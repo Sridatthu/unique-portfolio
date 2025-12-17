@@ -9,12 +9,12 @@ import X from "@/components/Svgs/X";
 export const socialLinks = [
   {
     name: 'X',
-    href: 'https://x.com/',
+    href: 'https://x.com/sridatthu16',
     icon: <X />,
   },
   {
     name: 'LinkedIn',
-    href: 'https://www.linkedin.com/in//',
+    href: 'https://www.linkedin.com/in/sri-datthu-goud/',
     icon: <LinkedIn />,
   },
   {

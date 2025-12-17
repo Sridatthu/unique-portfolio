@@ -15,7 +15,7 @@ export const ExperienceCard = () => {
                 </div>
             </div>
             <div className='flex flex-col md:items-center md:mt-0 mt-2'>
-                <div className='text-sm font-mono font-medium'>August 2025 - Present</div>
+                <div className='text-sm font-mono font-medium'>August 2025 - November 2025</div>
                 <div className='text-[#9898A2] text-sm font-mono font-medium'>India (Remote)</div>
             </div>
         </div>
