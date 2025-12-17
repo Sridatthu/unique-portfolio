@@ -18,21 +18,21 @@ export const Hero = () => {
               alt={HeroConfig.name}
               width={100}
               height={100}
-              className="size-24 rounded-full border-3 border-gray-150 dark:border-gray-400 transition-all duration-300 
+              className="size-20 md:size-24 rounded-full border-3 border-gray-150 dark:border-gray-400 transition-all duration-300 
             ease-in-out hover:scale-90"
             />
           </div>
           <div className="flex flex-col items-baseline">
             <div className="flex gap-2 items-center">
-              <h1 className="font-mono text-3xl font-medium">{HeroConfig.name}</h1>
+              <h1 className="font-mono text-xl md:text-3xl font-medium">{HeroConfig.name}</h1>
               <a className="hover:scale-110 transition-all duration-300 ease-in-out cursor-pointer " href="https://india.gov.in/" target="_blank" rel="noopener noreferrer"><IndiaFlag width={25} height={15} /></a>
             </div>
-            <WordRotate words={HeroConfig.jobTitle} className="text-[#9898A2] font-mono" />
+            <WordRotate words={HeroConfig.jobTitle} className="text-[#9898A2] font-mono text-base md:text-xl" />
           </div>
         </div>
 
         <div className="flex mt-4">
-            <div className="font-mono text-base text-left md:text-justify dark:text-[#A1A1A1] px-4 ">
+            <div className="font-mono text-sm  md:text-base text-left md:text-justify dark:text-[#A1A1A1] px-4 ">
                 I built intearactive and responsive web applications using modern technologies.with a strong focus on clean code and best practices.
             </div>
 
@@ -40,7 +40,7 @@ export const Hero = () => {
         <div className="flex items-center gap-2 mt-2 px-4">
           <Socials />
         </div>
-        <div className="px-3">
+        <div className="">
           <NowPlaying />
         </div>
       </div>

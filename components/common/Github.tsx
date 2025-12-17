@@ -22,7 +22,7 @@ export const Github = () => {
     }
 
   return (
-    <div className='mt-6 flex flex-col px-4 gap-4'>
+    <div className='mt-6 flex flex-col px-3 gap-4'>
         <h2 className='text-3xl font-semibold'>Github Activity</h2>
         <div className='flex w-full justify-center font-mono border p-4 rounded-lg btn-inner-shadow'>
              <GitHubCalendar

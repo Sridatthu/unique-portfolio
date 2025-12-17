@@ -8,7 +8,7 @@ export const ExperienceCard = () => {
     <div className='flex flex-col  gap-4 mt-4 p-4 '>
         <div className=' flex flex-col md:flex-row md:justify-between md:items-center'>
             <div className='flex gap-4  '>
-                 <Image src='/assets/ten.webp' alt='TEN Logo' width={40} height={40} className='rounded-md object-cover  hover:scale-95 transition-all duration-300 ease-in-out cursor-pointer'/>
+                 <Image src='/assets/ten.webp' alt='TEN Logo' width={40} height={40} className='rounded-md h-12 w-12 object-cover  hover:scale-95 transition-all duration-300 ease-in-out cursor-pointer'/>
                 <div className='flex flex-col '>
                     <div className='text-base font-mono font-semibold'>The Entrepreneurship Network</div>
                     <div className=' text-[#9898A2] text-sm font-mono font-medium'>Frontend Developer.</div>
@@ -19,7 +19,7 @@ export const ExperienceCard = () => {
                 <div className='text-[#9898A2] text-sm font-mono font-medium'>India (Remote)</div>
             </div>
         </div>
-        <div className='flex flex-col gap-4 px-2 '>
+        <div className='flex flex-col gap-4 px-1 '>
             <div className='font-semibold text-base font-mono'>Technologies & Tools</div>
             <div className="flex flex-wrap gap-2">
                 {ExperienceConfig.skills.map((skill, index) => {
@@ -33,7 +33,7 @@ export const ExperienceCard = () => {
             })}
             </div>
         </div>
-        <div className='flex flex-col gap-2 px-2 '>
+        <div className='flex flex-col gap-2 px-1 '>
             <p className='text-sm font-mono text-justify dark:text-[#A1A1A1] '>
             - Developed and maintained responsive web applications using  <span className='font-bold'>Next.js</span>, <span className='font-bold'>React</span>, <span className='font-bold'>TypeScript</span> and <span className='font-bold'>Tailwind CSS</span>, ensuring optimal performance and user experience across devices.
             </p>
