@@ -109,8 +109,8 @@ export const TechStack = () => {
               ))}
           </Marquee> 
 
-           <div className="from-background pointer-events-none absolute inset-y-0 -left-4 w-1/4 bg-gradient-to-r"></div>
-      <div className="from-background pointer-events-none absolute inset-y-0 -right-4 w-1/4 bg-gradient-to-l"></div> 
+           <div className="from-background pointer-events-none absolute inset-y-0 -left-4 w-1/4 bg-linear-to-r"></div>
+      <div className="from-background pointer-events-none absolute inset-y-0 -right-4 w-1/4 bg-linear-to-l"></div> 
         </div>
     </div>
    </Box>
