@@ -1,7 +1,7 @@
-import Github from "@/components/Svgs/Github";
-import LinkedIn from "@/components/Svgs/LinkedIn";
-import Mail from "@/components/Svgs/Mail";
-import X from "@/components/Svgs/X";
+import GithubIcon from "@/components/ui/github-icon";
+import LinkedinIcon from "@/components/ui/linkedin-icon";
+import MailFilledIcon from "@/components/ui/mail-filled-icon";
+import TwitterXIcon from "@/components/ui/twitter-x-icon";
 
 
 
@@ -9,22 +9,22 @@ import X from "@/components/Svgs/X";
 export const socialLinks = [
   {
     name: 'X',
-    href: 'https://x.com/sridatthu16',
-    icon: <X />,
+    href: 'https://x.com/sridatthu1',
+    icon: <TwitterXIcon />,
   },
   {
     name: 'LinkedIn',
     href: 'https://www.linkedin.com/in/sri-datthu-goud/',
-    icon: <LinkedIn />,
+    icon: <LinkedinIcon />,
   },
   {
     name: 'Github',
     href: 'https://github.com/Sridatthu',
-    icon: <Github />,
+    icon: <GithubIcon />,
   },
   {
     name: 'Email',
     href: 'mailto:sridatthu18@gmail.com',
-    icon: <Mail />,
+    icon: <MailFilledIcon />,
   },
 ];
